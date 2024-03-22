@@ -33,29 +33,33 @@ public :
 
     }
 
+    void DisplayDetails(int id, string name,int age , string post, int salary){
+
+        cout << "==========================" << endl;
+        cout << "Employee Details :" << endl;
+        cout << "Id : " << id << endl;
+        cout << "Name : " << name << endl;
+        cout << "Age : " << age << endl;
+        cout << "Post : " << post << endl;
+        cout << "Salary : " << salary << endl;
+        cout << "==========================" << endl;
+    }
+
 };
 
 int main(){
     //create a object using classname
     EmployeeDetails emp1(214,"Rajat Kumawat" ,25,"Manager",1000000);
     EmployeeDetails emp2(215,"Kurshed Khan" ,22,"Teacher",1000);
+    empl.DisplayDetails()// thik karna hai ese abhi pura nhi hua
 
-    cout << "==========================" << endl;
-    cout << "Employee Details :" << endl;
-    cout << "Id : " << emp1.id << endl;
-    cout << "Name : " << emp1.name << endl;
-    cout << "Age : " << emp1.age << endl;
-    cout << "Post : " << emp1.post << endl;
-    cout << "Salary : " << emp1.salary << endl;
-    cout << "==========================" << endl;
-
-    cout << "==========================" << endl;
-    cout << "Employee Details :" << endl;
-    cout << "Id : " << emp2.id << endl;
-    cout << "Name : " << emp2.name << endl;
-    cout << "Age : " << emp2.age << endl;
-    cout << "Post : " << emp2.post << endl;
-    cout << "Salary : " << emp2.salary << endl;
-    cout << "==========================" << endl;
+    // cout << "==========================" << endl;
+    // cout << "Employee Details :" << endl;
+    // cout << "Id : " << emp2.id << endl;
+    // cout << "Name : " << emp2.name << endl;
+    // cout << "Age : " << emp2.age << endl;
+    // cout << "Post : " << emp2.post << endl;
+    // cout << "Salary : " << emp2.salary << endl;
+    // cout << "==========================" << endl;
     return 0;
 }
